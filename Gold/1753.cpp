@@ -2,8 +2,8 @@
 #include <vector>
 #include <queue>
 
-#define VEC 300000
-#define MAX 99999
+#define VEC 300001
+#define MAX 100000000
 
 using namespace std;
 
@@ -27,9 +27,9 @@ void dijkstra(int S) {
 		for (int i = 0; i < adj[u].size(); i++) {
 			int v = adj[u][i].first;
 			int c = adj[u][i].second;
-			if (dis[v] > dis[u] + c) {
-				dis[v] = dis[u] + c;
-				pq.push({ -dis[v], v });
+			if (dis[v] > d + c) {
+				dis[v] = d + c;
+				pq.push(make_pair(-dis[v], v));
 			}
 		}
 	}
