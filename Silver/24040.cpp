@@ -13,7 +13,7 @@ int main() {
 	cin >> T;
 
 	while (T--) {
-		int N;
+		long long N;
 
 		cin >> N;
 
