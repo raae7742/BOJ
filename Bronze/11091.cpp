@@ -1,5 +1,6 @@
 #include <iostream>
 #include <algorithm>
+#include <cstring>
 #include <string>
 #include <queue>
 
@@ -23,7 +24,7 @@ int main() {
 		queue<char> q;
 		memset(alpha, false, 26);
 		getline(cin, input);
-		for (int i = 0; i < input.size(); i++) {
+		for (int i = 0; i < input.length(); i++) {
 			char c = input.at(i);
 			if (c >= 'a' && c <= 'z') alpha[c - 'a'] = true;
 			if (c >= 'A' && c <= 'Z') alpha[c - 'A'] = true;
