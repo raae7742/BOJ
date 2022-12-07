@@ -31,7 +31,7 @@ void sumOfSubset(int i, int weight, int total) {
 }
 
 int main() {
-    init();
+    	init();
 
 	sumOfSubset(0, 0, 18);
 }
